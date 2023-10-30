@@ -51,6 +51,15 @@ createApp({
         },
         bigImg(indice){
             this.index = indice;
+        },
+        timerImg(){
+            this.index ++;
+            if(this.index > this.slides.length - 1){
+                this.index = 0;
+            }
         }
+    },
+    mounted(){
+        setInterval(this.timerImg, 3000);
     }
 }).mount('#app')
