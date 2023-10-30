@@ -60,6 +60,6 @@ createApp({
         }
     },
     mounted(){
-        setInterval(this.timerImg, 3000);
+        setInterval(this.timerImg, 8000);
     }
 }).mount('#app')
